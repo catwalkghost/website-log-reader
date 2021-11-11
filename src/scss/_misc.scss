@@ -1,0 +1,110 @@
+// Layout
+.layout-container {
+  @extend .row-center-center;
+  @extend .width-100p;
+  @extend .height-100vh;
+
+  @extend .stripey-background;
+}
+
+// Table Container
+.table-container {
+  @extend .col-center-center;
+
+  @extend .border-accent;
+  @extend .rounded-1x;
+
+  @include media-sm {
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+
+  @include media-lg {
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
+
+// Table Header
+.table-header {
+  @extend .table-row;
+
+  @extend .font-weight-700;
+  @extend .font-h2;
+
+  @extend .bg-accent;
+  @extend .fg-white;
+  @extend .rounded-top-1x;
+}
+
+// Table Row
+.table-row {
+  @extend .width-100p;
+  @extend .row-between-end;
+  @extend .gaps-h-2;
+  @extend .padding-1;
+}
+
+// Main Table Content
+.table-content {
+  @extend .fg-primary;
+
+  &:nth-child(even) {
+    @extend .bg-gray-5;
+  }
+
+  &:nth-child(odd) {
+    @extend .bg-white;
+  }
+
+  &:last-child {
+    @extend .rounded-bottom-1x;
+  }
+}
+
+// Loading animation
+.pulsating {
+  @extend .margin-1;
+
+  height: 2rem;
+  width: 2rem;
+
+  background: $color-shadow;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 $color-shadow;
+
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 $color-accent-transparent;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 1rem $color-accent-invisible;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 $color-accent-invisible;
+  }
+}
+
+// Stripey Background
+.stripey-background {
+  background-image:
+          linear-gradient(
+                          135deg,
+                          $color-gray-3 37.50%,
+                          $color-accent-light 37.50%,
+                          $color-accent-light 50%,
+                          $color-gray-3 50%,
+                          $color-gray-3 87.50%,
+                          $color-accent-light 87.50%,
+                          $color-accent-light 100%);
+  background-size: 5.66px 5.66px;
+}
