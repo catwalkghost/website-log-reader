@@ -1,9 +1,9 @@
-#Website Log Reader
-##Project Summary
+# Website Log Reader
+## Project Summary
 This is sample React project, which uses an externally loaded data source to count visits per page.
 Note that unique (per IP) visits counter has not been implemented due to the time constraints.
 
-##Project Set Up**
+## Project Set Up**
 The project doesn't use CRA or similar. Instead, it is set up using own generic Webpack boilerplate.
 
 The project aims for quality and readable code and uses ESLint and Prettier (AirBnB Rules).
@@ -12,17 +12,17 @@ While the project doesn't use TypeScript, it takes advantage of PropTypes librar
 
 The project is styled using SCSS. While it may not be necessary for the scale of the project, the aim was to demonstrate a sample structure, which supports some degree of scalability. 
 
-##Dependencies
+## Dependencies
 The project uses the following libraries for convenience:
 
 [FPX](https://github.com/mitranim/fpx) — a perofrmance-optimised Loadah-like library
 
 [Stylebox](https://aristovpro.github.io/stylebox/#about) — a small SCSS library with a collection of atomic classes
 
-##Tests
+## Tests
 Test suite was set up, but tests have not been written due to the lack of time. They can be added upon request.
 
-##Available Scripts
+## Available Scripts
 
 ```npm i``` or ```yarn```
 Available Scripts
