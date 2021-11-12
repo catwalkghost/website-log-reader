@@ -1,9 +1,12 @@
 # Website Log Reader
+
+![ Website Log Reader](https://github.com/catwalkghost/website-log-reader/raw/master/static/screenshot.png "Screenshot")
+
 ## Project Summary
 This is sample React project, which uses an externally loaded data source to count visits per page.
 Note that unique (per IP) visits counter has not been implemented due to the time constraints.
 
-## Project Set Up**
+## Project Set Up
 The project doesn't use CRA or similar. Instead, it is set up using own generic Webpack boilerplate.
 
 The project aims for quality and readable code and uses ESLint and Prettier (AirBnB Rules).
@@ -43,3 +46,4 @@ Bundles the app in production mode and creates the production build of the app i
 
 ```npm test``` or ```yarn test```
 Runs all the tests for the app (using Jest & Enzyme) and outputs the results of the tests in the terminal.
+
